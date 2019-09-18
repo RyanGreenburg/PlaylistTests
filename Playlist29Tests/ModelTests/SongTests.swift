@@ -17,4 +17,8 @@ class SongTests: XCTestCase {
     override func setUp() {
         sut = Song(title: "Test Title", artist: "Test Artist")
     }
+    
+    func testSongInit() {
+        XCTAssertNotNil(sut)
+    }
 }

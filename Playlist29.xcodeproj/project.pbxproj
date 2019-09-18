@@ -16,6 +16,10 @@
 		62BD98AE233291C100473239 /* PlaylistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BD98AD233291C100473239 /* PlaylistTests.swift */; };
 		62BD98B02332926200473239 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BD98AF2332926200473239 /* Song.swift */; };
 		62BD98B3233292B700473239 /* SongTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BD98B2233292B700473239 /* SongTests.swift */; };
+		62BD98B5233294E900473239 /* PlaylistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BD98B4233294E900473239 /* PlaylistTableViewController.swift */; };
+		62BD98B7233294F300473239 /* SongTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BD98B6233294F300473239 /* SongTableViewController.swift */; };
+		62BD98BB2332974900473239 /* PlaylistController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BD98BA2332974900473239 /* PlaylistController.swift */; };
+		62BD98BD2332975700473239 /* SongController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BD98BC2332975700473239 /* SongController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +46,10 @@
 		62BD98AD233291C100473239 /* PlaylistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistTests.swift; sourceTree = "<group>"; };
 		62BD98AF2332926200473239 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		62BD98B2233292B700473239 /* SongTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongTests.swift; sourceTree = "<group>"; };
+		62BD98B4233294E900473239 /* PlaylistTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistTableViewController.swift; sourceTree = "<group>"; };
+		62BD98B6233294F300473239 /* SongTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongTableViewController.swift; sourceTree = "<group>"; };
+		62BD98BA2332974900473239 /* PlaylistController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistController.swift; sourceTree = "<group>"; };
+		62BD98BC2332975700473239 /* SongController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				62BD98AC233291B000473239 /* Models */,
+				62BD98B8233294F800473239 /* Controllers */,
 				62BD98A9233291A000473239 /* Views */,
 				62BD98A82332914100473239 /* Resources */,
 			);
@@ -135,6 +144,33 @@
 				62BD98B2233292B700473239 /* SongTests.swift */,
 			);
 			path = ModelTests;
+			sourceTree = "<group>";
+		};
+		62BD98B8233294F800473239 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				62BD98BE2332976800473239 /* ModelControllers */,
+				62BD98B92332950C00473239 /* ViewControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		62BD98B92332950C00473239 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				62BD98B4233294E900473239 /* PlaylistTableViewController.swift */,
+				62BD98B6233294F300473239 /* SongTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		62BD98BE2332976800473239 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				62BD98BA2332974900473239 /* PlaylistController.swift */,
+				62BD98BC2332975700473239 /* SongController.swift */,
+			);
+			path = ModelControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,9 +274,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62BD98BD2332975700473239 /* SongController.swift in Sources */,
+				62BD98B7233294F300473239 /* SongTableViewController.swift in Sources */,
 				62BD98B02332926200473239 /* Song.swift in Sources */,
 				62BD98892332913700473239 /* AppDelegate.swift in Sources */,
 				62BD98AB233291AC00473239 /* Playlist.swift in Sources */,
+				62BD98B5233294E900473239 /* PlaylistTableViewController.swift in Sources */,
+				62BD98BB2332974900473239 /* PlaylistController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
