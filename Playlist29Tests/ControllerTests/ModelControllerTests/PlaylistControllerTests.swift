@@ -44,8 +44,8 @@ class PlaylistControllerTests: XCTestCase {
     }
     
     func testDeletePlaylist() {
-        sut.playlists.append(playlist)
-        sut.delete(playlist)
-        XCTAssertFalse(sut.playlists.contains(playlist))
+        let playlistToDelete = Playlist(name: "Delete Playlist")
+        sut.delete(playlistToDelete)
+        XCTAssertFalse(sut.playlists.contains(playlistToDelete))
     }
 }
