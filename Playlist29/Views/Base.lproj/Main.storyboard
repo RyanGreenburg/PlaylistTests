@@ -12,7 +12,7 @@
         <!--Playlists-->
         <scene sceneID="byL-fl-pdv">
             <objects>
-                <tableViewController id="igZ-EZ-Vdg" customClass="PlaylistTableViewController" customModule="Playlist29" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="PlaylistTableViewController" id="igZ-EZ-Vdg" customClass="PlaylistTableViewController" customModule="Playlist29" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="kJ7-1Z-fff">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -73,10 +73,14 @@
                     <navigationItem key="navigationItem" title="Playlists" id="Wkf-4D-yYf">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="hJe-uC-eBJ">
                             <connections>
-                                <segue destination="Y4q-Cq-fuY" kind="show" id="0wf-Gn-OTL"/>
+                                <action selector="addNewPlaylistButtonTapped:" destination="igZ-EZ-Vdg" id="WYY-UF-jd1"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="addNewPlaylistButton" destination="hJe-uC-eBJ" id="Wkk-La-4PM"/>
+                        <outlet property="playlistTitleTextField" destination="Xl9-ug-jNo" id="pFc-7d-oNE"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="akX-Tq-CSr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -85,7 +89,7 @@
         <!--Songs-->
         <scene sceneID="hpU-8a-dGS">
             <objects>
-                <tableViewController id="Y4q-Cq-fuY" customClass="SongTableViewController" customModule="Playlist29" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="SongTableViewController" id="Y4q-Cq-fuY" customClass="SongTableViewController" customModule="Playlist29" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="R3v-Vl-LxJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -155,9 +159,17 @@
                         <barButtonItem title="Item" id="M9P-sj-8W8"/>
                     </toolbarItems>
                     <navigationItem key="navigationItem" title="Songs" id="Oin-FG-PZk">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="gcQ-Aq-B5w"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="gcQ-Aq-B5w">
+                            <connections>
+                                <action selector="addSongButtonTapped:" destination="Y4q-Cq-fuY" id="DFq-0L-xfz"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="artistTextField" destination="XqQ-jA-CWq" id="92f-nA-F7x"/>
+                        <outlet property="titleTextField" destination="6Ti-zI-W8S" id="BAz-ZX-8sZ"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lEl-SK-6YL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -182,7 +194,4 @@
             <point key="canvasLocation" x="137.68115942028987" y="107.8125"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="jKo-8L-cSg"/>
-    </inferredMetricsTieBreakers>
 </document>
