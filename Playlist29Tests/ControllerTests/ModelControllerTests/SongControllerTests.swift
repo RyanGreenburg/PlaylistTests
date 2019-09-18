@@ -12,27 +12,18 @@ import XCTest
 
 class SongControllerTests: XCTestCase {
     
-    var sut: SongController!
     let playlist = Playlist(name: "Test Playlist")
     
     override func setUp() {
         super.setUp()
-        sut = SongController.shared
     }
     
     override func tearDown() {
         super.tearDown()
-        sut = nil
     }
     
     func testCreateSong() {
-        sut.createSong(with: "Test Song", artist: "Test Artist", playlist: playlist)
+        SongController.createSong(with: "Test Song", artist: "Test Artist", playlist: playlist)
         XCTAssertTrue(playlist.songs.count > 0)
-    }
-    
-    func testDeleteSong() {
-        let songToDelete = Song(title: "Test Song", artist: "Test Artist")
-        sut.delete(songToDelete, from: playlist)
-        XCTAssertFalse(playlist.songs.contains(songToDelete))
     }
 }
