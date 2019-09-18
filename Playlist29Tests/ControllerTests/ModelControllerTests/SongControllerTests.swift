@@ -1,13 +1,11 @@
 //
-//  SongController.swift
-//  Playlist29
+//  SongControllerTests.swift
+//  Playlist29Tests
 //
 //  Created by RYAN GREENBURG on 9/18/19.
 //  Copyright © 2019 RYAN GREENBURG. All rights reserved.
 //
 
 import Foundation
-
-class SongController {
-    
-}
+import XCTest
+@testable import Playlist29

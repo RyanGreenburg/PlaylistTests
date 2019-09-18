@@ -7,3 +7,26 @@
 //
 
 import Foundation
+
+class PlaylistController {
+    
+    static let shared = PlaylistController()
+    
+    var playlists: [Playlist] = []
+    
+    // MARK: - CRUD
+    // Create
+    func createPlaylist(with name: String) {
+        let newPlaylist = Playlist(name: name)
+        playlists.append(newPlaylist)
+    }
+    
+    // Update
+    func update(_ playlist: Playlist, withSong: Song) {
+        
+    }
+    
+    func delete(_ song: Song, fromPlaylist: Playlist) {
+        
+    }
+}

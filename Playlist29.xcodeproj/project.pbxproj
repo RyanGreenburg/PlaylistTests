@@ -20,6 +20,10 @@
 		62BD98B7233294F300473239 /* SongTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BD98B6233294F300473239 /* SongTableViewController.swift */; };
 		62BD98BB2332974900473239 /* PlaylistController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BD98BA2332974900473239 /* PlaylistController.swift */; };
 		62BD98BD2332975700473239 /* SongController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BD98BC2332975700473239 /* SongController.swift */; };
+		62BD98C0233297A400473239 /* PlaylistControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BD98BF233297A400473239 /* PlaylistControllerTests.swift */; };
+		62BD98C2233297AD00473239 /* SongControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BD98C1233297AD00473239 /* SongControllerTests.swift */; };
+		62BD98C72332986400473239 /* PlaylistTableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BD98C62332986400473239 /* PlaylistTableViewControllerTests.swift */; };
+		62BD98C92332987300473239 /* SongTableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BD98C82332987300473239 /* SongTableViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +54,10 @@
 		62BD98B6233294F300473239 /* SongTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongTableViewController.swift; sourceTree = "<group>"; };
 		62BD98BA2332974900473239 /* PlaylistController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistController.swift; sourceTree = "<group>"; };
 		62BD98BC2332975700473239 /* SongController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongController.swift; sourceTree = "<group>"; };
+		62BD98BF233297A400473239 /* PlaylistControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistControllerTests.swift; sourceTree = "<group>"; };
+		62BD98C1233297AD00473239 /* SongControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongControllerTests.swift; sourceTree = "<group>"; };
+		62BD98C62332986400473239 /* PlaylistTableViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistTableViewControllerTests.swift; sourceTree = "<group>"; };
+		62BD98C82332987300473239 /* SongTableViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongTableViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +113,7 @@
 				62BD989D2332913800473239 /* Playlist29Tests.swift */,
 				62BD989F2332913800473239 /* Info.plist */,
 				62BD98B12332928400473239 /* ModelTests */,
+				62BD98C4233297F900473239 /* ControllerTests */,
 			);
 			path = Playlist29Tests;
 			sourceTree = "<group>";
@@ -171,6 +180,33 @@
 				62BD98BC2332975700473239 /* SongController.swift */,
 			);
 			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		62BD98C4233297F900473239 /* ControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				62BD98C52332980800473239 /* ModelControllerTests */,
+				62BD98CA2332987E00473239 /* ViewControllerTests */,
+			);
+			path = ControllerTests;
+			sourceTree = "<group>";
+		};
+		62BD98C52332980800473239 /* ModelControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				62BD98BF233297A400473239 /* PlaylistControllerTests.swift */,
+				62BD98C1233297AD00473239 /* SongControllerTests.swift */,
+			);
+			path = ModelControllerTests;
+			sourceTree = "<group>";
+		};
+		62BD98CA2332987E00473239 /* ViewControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				62BD98C62332986400473239 /* PlaylistTableViewControllerTests.swift */,
+				62BD98C82332987300473239 /* SongTableViewControllerTests.swift */,
+			);
+			path = ViewControllerTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,8 +325,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				62BD989E2332913800473239 /* Playlist29Tests.swift in Sources */,
+				62BD98C92332987300473239 /* SongTableViewControllerTests.swift in Sources */,
+				62BD98C2233297AD00473239 /* SongControllerTests.swift in Sources */,
+				62BD98C0233297A400473239 /* PlaylistControllerTests.swift in Sources */,
 				62BD98B3233292B700473239 /* SongTests.swift in Sources */,
 				62BD98AE233291C100473239 /* PlaylistTests.swift in Sources */,
+				62BD98C72332986400473239 /* PlaylistTableViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
