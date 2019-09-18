@@ -21,4 +21,8 @@ class PlaylistTests: XCTestCase {
     func testPlaylistInit() {
         XCTAssertNotNil(sut)
     }
+    
+    func testEquatableAdherance() {
+        XCTAssertTrue(sut == Playlist(name: "Test Playlist") && sut != Playlist(name: "Fail Case"))
+    }
 }

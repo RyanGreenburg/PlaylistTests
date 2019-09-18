@@ -22,11 +22,17 @@ class PlaylistController {
     }
     
     // Update
-    func update(_ playlist: Playlist, withSong: Song) {
-        
+    func update(_ playlist: Playlist, withSong song: Song) {
+        playlist.songs.append(song)
     }
     
-    func delete(_ song: Song, fromPlaylist: Playlist) {
-        
+    func delete(_ song: Song, fromPlaylist playlist: Playlist) {
+        guard let index = playlist.songs.firstIndex(of: song) else { return }
+        playlist.songs.remove(at: index)
+    }
+    
+    func delete(_ playlist: Playlist) {
+        guard let index = playlists.firstIndex(of: playlist) else { return }
+        playlists.remove(at: index)
     }
 }
